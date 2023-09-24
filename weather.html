@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Προγνωστικά καιρού για
+            <span id="city-field"></span></p>
+        </div>
+    
+        <div class="main">
+            <div class="form">
+             <label for="city-sel">Επιλέξτε πόλη</label>
+             <select name="city-sel" id="city-sel"></select>
+             <label for="frequency-sel">Επιλέξετε συχνότητα</label>
+             <select name="frequency-sel" id="frequency-sel">
+                <option value="hourly">Ωριαία Προγωνστικά</option>
+                <option value="daily" selected> Ημερήσια Προγωνστικά</option>
+             </select>
+            </div>
+    
+            <div class="results">
+                <table id="forecast-table" >
+                </table>
+             </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./weather.js"></script>
+</body>
+</html>
